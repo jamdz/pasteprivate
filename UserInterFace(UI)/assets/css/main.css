@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Inter', sans-serif;
+    font-size: 17;
+}
+
+.pasteprivate_header_img {
+    display: inline-block;
+}
+
+@media only screen and (max-width: 750px) {
+    .pasteprivate-mobi-header {
+        display: flex;
+        background-color: rgb(118, 102, 102);
+    }
+    .pasteprivate-mobil_head {
+        min-height: 100vh;
+    }
+    /*Image css styles*/
+    .pasteprivate_mobile-img {
+        display: inline-block;
+        padding-inline-start: 10px;
+    }
+    .pasteprivate_mobile-logo {
+        width: 170px;
+        height: auto;
+    }
+    .pasteprivate-mobile_post-content {
+        padding: 10px;
+    }
+    .pasteprivate-post-content-form-div {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    .pastepriavte_mobile-form-tile {
+        min-width: -webkit-fill-available;
+        height: 70px;
+        text-align: center;
+        font-stretch: ultra-expanded;
+        font-weight: 500;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border-block-start-style: none;
+        border-radius: 7px;
+        margin-bottom: 30px;
+    }
+    .pasteprivate_Mobile-form_content {
+        display: flex;
+        flex-direction: column;
+        filter: drop-shadow(2px 4px 6px black);
+    }
+    .pasteprivate-mobi-button {
+        width: 170px;
+        padding: 20px;
+        align-self: center;
+        margin-top: 30px;
+        border: unset;
+        border-radius: 10px;
+        font-size: 14px;
+        background-color: chartreuse;
+        font-weight: 900;
+    }
+    .pasteprivate-mobile_expiry_item_time {
+        height: 70px;
+        margin-bottom: 30px;
+    }
+    .pasteprivate-footer {
+        background-color: rgb(118, 102, 102);
+        padding: 30px;
+    }
+    .pasteprivate_mobile-footer {
+        text-align: center;
+        font-weight: 900;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .pasteprivate_js_error {
+        color: red;
+        font-weight: 900;
+        font-family: 'Courier New', Courier, monospace;
+        padding: 10px;
+    }
+    .pasteprivate_mobile_success-content {
+        min-height: -webkit-fill-available;
+        /* 100vh */
+    }
+    .pasteprivate_mobile-successful_content_post {
+        padding: 30px;
+        background-color: royalblue;
+        color: black;
+        width: 80%;
+        margin-top: 40px;
+        justify-self: center;
+        position: relative;
+        filter: drop-shadow(2px 4px 6px black);
+        border-radius: 20px;
+        position: relative;
+    }
+    .pasteprivate_success_post {
+        display: grid;
+    }
+    .privatepaste_mobile-success_close_modal {
+        position: absolute;
+        top: 5px;
+        right: 20px;
+    }
+    .pasteprivate-get-link {
+        background-color: rgb(50, 228, 50);
+        padding: 30px;
+        width: 90%;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+    /* .pasteprivate_monbile-get_posted_link::after {
+        content: "";
+        border-left-style: solid;
+        position: relative;
+        border-bottom-style: solid;
+        top: -47px;
+        left: 19px;
+        width: 50px;
+        height: 50px;
+        box-sizing: border-box;
+        border-color: crimson;
+    } */
+    .pasteprivate_monbile-get_posted_link {
+        display: grid;
+        margin-top: 40px;
+    }
+    .pasteprivate-get-link {
+        justify-self: center;
+    }
+    .pasteprivate-Mobile-content_textarea {
+        padding-top: 30px;
+        padding-left: 20px;
+    }
+    #pasteprivate_content_form>select>optgroup:nth-child(1)>option {
+        width: 300px;
+    }
+    .pasteprivate-mobile-post_link {
+        margin-top: 20px;
+    }
+    body>section>div.pasteprivate_mobile_success-content>div.pasteprivate_monbile-get_posted_link>div>h3 {
+        font-size: 18px;
+    }
+    .patseprivate_advertisement {
+        display: grid;
+        place-items: center;
+        margin-block-start: 20px;
+        padding-block-end: 20px;
+    }
+    .remove_padding {
+        padding: 0;
+    }
+    .link_error {
+        background-color: red;
+    }
+    .link_error:active {
+        color: white;
+        text-decoration: unset;
+    }
+    body>section>div.pasteprivate_mobile_success-content>div.pasteprivate_monbile-get_posted_link>div>span>a {
+        color: white;
+        text-decoration: none;
+    }
+}
