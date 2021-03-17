@@ -1,0 +1,282 @@
+    /*
+
+Project Name: PastePrivate Code Sharing Project,
+Developer Name: Ifeanyi Johnson Ibemesi,
+Description: creating a code paste services to enable developers share their code work,
+Note: This css styles written by me can be edit if you have basic knowledge of css, 
+                      if have any custom design job for this project or other projects am very much avaliable.
+
+*/
+    /* body {
+    background-color: blue;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Montserrat';
+}
+
+.loading-page {
+    background-color: rgb(106, 106, 243);
+    width: 100vw;
+    height: 100vh;
+}
+
+.loading-page .counter h1 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 300px;
+    font-weight: bolder;
+    margin-top: -10px;
+}
+
+h2 {
+    position: fixed;
+    top: 70%;
+    left: 40%;
+    color: white;
+    font-size: 50px;
+    font-weight: normal;
+    margin-top: -10px;
+} */
+    
+    @media only screen and (min-width: 760px) {
+        .pasteprivate_head {
+            min-height: 100vh;
+        }
+        .pasteprivate_header {
+            background-color: tan;
+            display: flex;
+        }
+        /* .pasteprivate-post-content {
+        min-height: inherit;
+    } */
+        .pasteprivate-post-content {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            min-height: initial;
+            background-image: url('/UserInterFace(UI)/assets/img/page_bg.gif');
+            flex-direction: column;
+        }
+        .pasteprivate_content_form {
+            display: grid;
+            margin-top: 50px;
+            /* margin-inline-start: 50px; */
+            margin: 0 105px 0 105px;
+        }
+        .pasteprivate-post-content-form-div {
+            width: -webkit-fill-available;
+        }
+        /* images css for desktop */
+        .pasteprivate_mobile-img {
+            padding-inline-start: 40px;
+            flex: 0.15;
+        }
+        .pasteprivate-logo {
+            width: 170px;
+        }
+        .pasteprivate-ads {
+            width: 350px;
+            position: sticky;
+            top: 0px;
+            display: flex;
+            justify-content: center;
+        }
+        .ads-desktop {
+            display: inline-block;
+        }
+        .pastepriavte_form-tile,
+        .pasteprivate-_expiry_item_time {
+            padding: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 20px;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+        }
+        .pasteprivate-content_textarea {
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            font-size: 20px;
+        }
+        .pasteprivate_button {
+            padding: 20px;
+            width: 200px;
+            font-size: 18px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 700;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            /*margin-inline-start: 170px;
+    */
+            background-color: limegreen;
+            border: unset;
+        }
+        .pasteprivate_foot {
+            padding: 40px;
+            background-color: tan;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .paste_label {
+            font-size: 25px;
+            font-family: monospace;
+            font-weight: 800;
+            padding: 20px;
+        }
+        .footer_menu {
+            display: inline-flex;
+        }
+        body>section>footer>div.footer_menu>ul {
+            display: inherit;
+        }
+        .footer_copyright_info {
+            text-align: center;
+            font-family: fangsong;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .ads-desktop {
+            margin-top: 50px;
+        }
+        .pasteprivate-480_banner_ad {
+            display: flex;
+            justify-content: center;
+            padding: 30px;
+        }
+        .paste_search_header {
+            padding: 10px;
+            border-radius: 10px;
+            border: unset;
+            position: relative;
+            height: 45px;
+        }
+        .pasteprivate_search_paste_bar_header {
+            padding-top: 18px;
+            position: relative;
+        }
+        .biggie {
+            font-size: 25px;
+        }
+        .bg_paste_color {
+            background-color: transparent;
+            border: unset;
+            margin-inline-start: 10px;
+            position: absolute;
+            left: 138px;
+        }
+        .biggie_1 {
+            padding-top: 10px;
+        }
+        .paste_new {
+            font-size: 18px;
+            /* list-style-type: none; */
+            text-decoration: none;
+            color: black;
+        }
+        .paste_new:hover {
+            color: turquoise;
+            transition: .5s;
+            -webkit-transition: .5s;
+            -moz-transition: .5s;
+            -ms-transition: .5s;
+            -o-transition: .5s;
+        }
+        .paste_paste-new {
+            padding-top: 30px;
+            flex: 0.81;
+        }
+        .paste-private-menu {
+            display: none;
+        }
+        .pasteprivate_button:hover {
+            background-color: blue;
+            color: white;
+            transition: .9s;
+            -webkit-transition: .9s;
+            -moz-transition: .9s;
+            -ms-transition: .9s;
+            -o-transition: .9s;
+        }
+        .pasteprivate_mobile_success-content {
+            min-height: inherit;
+        }
+        .pasteprivate_raw_data_bin {
+            padding: 20px;
+        }
+        .pasteprivate_raw_data_bin h5 {
+            font-size: 1.6rem;
+            padding: 10px;
+            font-family: fangsong;
+            font-weight: bolder;
+        }
+        .Patseprivate_flex-paste_head {
+            filter: drop-shadow(2px 1px 3px black);
+            padding: 20px;
+            display: flex;
+            background-color: cornflowerblue;
+            margin-block-start: 40px;
+        }
+        .pasteprivate--title {
+            flex: 1;
+        }
+        .pasteprivate--title h4 {
+            font-size: 22px;
+            font-family: fangsong;
+        }
+        .pasteprivate----date h4 {
+            font-size: 22px;
+            font-family: fangsong;
+        }
+        .pasteprivate--paste-link-content {
+            margin-block-start: 40px;
+        }
+        .pasteprivate_error_page {
+            background-image: url('/UserInterFace(UI)/assets/img/—Pngtree—error 404 page not found_5768129.png');
+            min-height: 114vh;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+        .pasteprivate_social_links {
+            padding: 30px;
+        }
+        .paste_ul_li_socials_links {
+            display: flex;
+            justify-content: center;
+        }
+        .paste_ul_li_socials_links li {
+            font-size: 55px;
+            padding-inline-end: 50px;
+        }
+        .paste_ul_li_socials_links li .hovf_effect:hover {
+            color: tan;
+            transition: .9s;
+            -webkit-transition: .9s;
+            -moz-transition: .9s;
+            -ms-transition: .9s;
+            -o-transition: .9s;
+        }
+        .social-title h5 {
+            padding: 30px;
+            text-align: center;
+            font-size: 25px;
+            font-family: monospace;
+            font-weight: bolder;
+        }
+    }

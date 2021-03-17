@@ -1,0 +1,342 @@
+/*
+
+Project Name: PastePrivate Code Sharing Project,
+Developer Name: Ifeanyi Johnson Ibemesi,
+Description: creating a code paste services to enable developers share their code work,
+
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+table,
+td,
+th {
+    border-spacing: unset;
+    border-collapse: collapse;
+    border-width: 0;
+}
+
+td,
+th {
+    padding: 20px;
+}
+
+td {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+}
+
+html {
+    font-family: 'Inter', sans-serif;
+    font-size: 17;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 900;
+}
+
+@media only screen and (max-width: 750px) {
+    .pasteprivate-moblie_admin-body-wraooer {
+        min-height: 100vh;
+    }
+    .privatepaste_admin-mobile-img {
+        width: 130px;
+        height: auto;
+    }
+    .privatepaste_admin-mobile-header {
+        padding: 10px;
+        display: flex;
+        background-color: rgb(65, 108, 224);
+    }
+    .privatepaste_mobile-admin-breadcrumb {
+        padding: 20px;
+    }
+    .privatepaste_mobile-ad-breadcrumb {
+        display: flex;
+    }
+    .privatepaste_mobile-ad-breadcrumb-span-text,
+    .privatepaste_mobile-ad-breadcrumb-h4-title,
+    .privatepaste_mobile-ad-breadcrumb-span-text_1,
+    .privatepaste_mobile-ad-breadcrumb-h5-title {
+        padding-left: 5px;
+    }
+    .privatepaste_mobile-ad-breadcrumb-h5-title {
+        font-size: 11px;
+        padding-top: 3px;
+    }
+    .private-mobile_dashboardo {
+        display: flex;
+        padding: 20px;
+        justify-content: center;
+    }
+    .private-mobile_dashboardo-display {
+        background-color: black;
+        width: 95%;
+        height: 130px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        display: inline-flex;
+        filter: drop-shadow(2px 2px 2px black);
+        -webkit-filter: drop-shadow(2px 2px 2px black);
+    }
+    /* .private-mobile_dashboardo-display:hover {
+            transform-style: preserve-3d;
+        } */
+    .privatepaste-mobile_admin-dashboard-mainareara {
+        min-height: 100vh;
+    }
+    .pasteprivate-mobile-admin-foot {
+        padding: 30px;
+        background-color: black;
+    }
+    .pasteprivate-mobile-admin-footer {
+        color: white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 700;
+        text-align: center;
+        font-size: 14px;
+    }
+    .privatepaste-mobile-dash-dsiplay-1 {
+        margin: 20px;
+        flex: 0.9;
+    }
+    .privatepaste-mobile--dsiplay-1,
+    .privatepaste-mobile--dsiplay-2 {
+        color: white;
+    }
+    .privatepaste-mobile--dsiplay-1 {
+        font-size: 25px;
+        padding-top: 5px;
+    }
+    .privatepaste-mobile--dsiplay-2 {
+        font-size: 19px;
+    }
+    .pasteprivate-for-mobile-admin-login-message {
+        padding: 30px;
+        display: grid;
+        justify-items: center;
+    }
+    .pasteprivate-for-mobile-admin-login-message-1 {
+        background-color: lightgreen;
+        width: 89%;
+        max-height: 350px;
+        border-radius: 20px;
+        filter: drop-shadow(2px 4px 3px black);
+        -webkit-filter: drop-shadow(2px 4px 3px black);
+    }
+    .pasteprivate-for-mobi-title-mes {
+        color: black;
+    }
+    /* .pasteprivate-for-mobi-title-mess h2 {
+            color: white;
+        } */
+    .pasteprivate-for-mobi-article-mess {
+        min-height: -webkit-fill-available;
+    }
+    .pasteprivate-for-mobi-title-mess_h2 {
+        color: white;
+        padding: 10px;
+        font-variant: petite-caps;
+        font-size: 14px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .pasteprivate-for-mobi-title-mess {
+        padding: 20px;
+    }
+    .mobi-admin-dashboard_p {
+        font-size: 14px;
+        padding: 20px;
+        font-family: fangsong;
+        color: white;
+        font-weight: bolder;
+    }
+    .pasteprivate_mobile-admin-site-setting {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    .pasteprivate_mobile-admin-site-setting_form {
+        display: flex;
+        flex-direction: column;
+        /* filter: sepia(1); */
+    }
+    .pasteprivate_mobi-admin-site-settin-btn_up {
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+    }
+    .pasteprivate_mobi-admin-site-settin-btn_update {
+        padding: 20px;
+        width: 130px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        border: unset;
+        background-color: chartreuse;
+        font-weight: 900;
+        font-size: 14px;
+    }
+    .pasteprivate_mobil-adm-site-settin-tetx {
+        min-width: -webkit-fill-available;
+        height: 55px;
+        text-align: center;
+        font-stretch: ultra-expanded;
+        font-weight: 500;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border-block-start-style: none;
+        border-radius: 7px;
+        margin-bottom: 30px;
+    }
+    .pasteprivate_mobi-ad-setin-img-upload {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .pasteprivate-mobile_admin_search-paste {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+    }
+    .pasteprivate-mobi_ad-form_search-paste_text {
+        padding: 10px;
+    }
+    .pasteprivate-mobile_admin_search-paste-text-field {
+        padding: 10px;
+        text-align: center;
+        width: 90%;
+        border: unset;
+        border-bottom: ridge;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        transition: .5s;
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        -ms-transition: .5s;
+        -o-transition: .5s;
+    }
+    .pasteprivate-mobile_admin_search-paste-text-field_button {
+        padding: 15px;
+        width: 145px;
+        margin-right: 7px;
+        background-color: lightgreen;
+        border: unset;
+        border-radius: 10px;
+        font-weight: 900;
+        font-size: 12px;
+    }
+    .pasteprivate-mobi_ad-form_search-paste_text {
+        display: inline-flex;
+    }
+    .pasteprivate-mobile_search-paste-form_table {
+        padding: 10px;
+        display: table-column-group;
+        /* grid-auto-columns: min-content; */
+        overflow: auto;
+        justify-content: center;
+        /* flex-direction: column; */
+        margin-top: 40px;
+    }
+    .pasteprivate-mobile_search-paste-form_table-th-tr {
+        background-color: tan;
+        border-width: 0;
+    }
+    .pasteprivate-mobile-no-record {
+        display: flex;
+        justify-content: center;
+    }
+    .pasteprte_mobi-ad-setin-img-upload,
+    .pasteprivate_mobil-adm-site-settin-tetx,
+    .pasteprivate_mobi-admin-site-settin-descrip,
+    .pasteprivate_mobi-ad-site-settin-textarea {
+        filter: drop-shadow(2px 4px 6px black);
+    }
+    .pasteprivate-paste-icon,
+    .pasteprivate-paste-report {
+        color: white;
+        text-align: center;
+        font-size: 70px;
+        padding-top: 30px
+    }
+    .reduce_margin {
+        margin-top: 10px;
+    }
+    .sticky-top {
+        position: sticky;
+        top: -1px;
+        z-index: 1;
+    }
+    .deduce_font {
+        font-size: 30px;
+    }
+    .pastebin_general_info h5 {
+        padding: 20px;
+        font-size: 20px;
+        font-family: cursive;
+        font-weight: bold;
+    }
+    hr {
+        width: 90%;
+        margin-left: 10px;
+    }
+    .paste_setting_tabs {
+        padding: 10px;
+    }
+    .paste_tab_ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .paste_tab_ul li {
+        list-style-type: none;
+        padding: 20px;
+    }
+    .paste_line {
+        border-bottom: ridge;
+    }
+}
+
+
+/* filter: drop-shadow(2px 4px 6px black); */
+
+
+/* <i class="fas fa-cog"></i> */
+
+
+/* <i class="fas fa-sliders-h"></i> */
+
+
+/* <i class="fas fa-tachometer-alt"></i> */
+
+
+/* <i class="fas fa-search"></i> */
+
+
+/* <i class="far fa-trash-alt"></i> */
+
+
+/* for-mobile-admin-login-message {
+        padding: 30px;
+        background-color: black;
+    } */

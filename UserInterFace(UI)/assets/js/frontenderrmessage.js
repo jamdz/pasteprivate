@@ -1,21 +1,19 @@
-// let f;
-// let e;
-// let h;
+let ff;
+let ef;
 
 
-// f = document.getElementsByName('pasteprivate-content_title');
-// e = document.getElementsByClassName('pasteprivate_js_error');
-// h = document.getElementById('pasteprivate_content_form');
+ff = document.querySelector(".pasteprivate-mobile_naviga");
+ef = document.querySelector("body > section > header > div.pasteprivate-mobile-hamburger.alter-hamburger.paste-private-menu > i");
 
-// h.addEventListener('submit', () => {
 
-//     if (f == "") {
-//         e.textContent = 'Please the title field can not be left blank';
-//     } else {
 
-//     }
 
-// });
+
+ef.addEventListener("click", () => {
+
+    ff.classList.toggle("show");
+
+});
 
 let e;
 let f;
@@ -45,6 +43,9 @@ df = hhy[2];
 
 
 console.log(jh, gf, df);
+
+
+
 
 
 

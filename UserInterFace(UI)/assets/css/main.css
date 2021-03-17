@@ -1,7 +1,23 @@
+/*
+
+Project Name: PastePrivate Code Sharing Project,
+Developer Name: Ifeanyi Johnson Ibemesi,
+Description: creating a code paste services to enable developers share their code work,
+Note: This css styles written by me can be edit if you have basic knowledge of css, if have any custom design job for this project or other projects am very much avaliable.
+
+*/
+
+li {
+    margin-inline-end: 15px;
+    font-size: 20px;
+    font-family: fangsong;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    list-style-type: none;
 }
 
 html {
@@ -9,11 +25,26 @@ html {
     font-size: 17;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 900;
+}
+
 .pasteprivate_header_img {
     display: inline-block;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 750px) and (max-height: 750px) {
+    .ad_styles,
+    .ads-desktop {
+        display: none;
+    }
     .pasteprivate-mobi-header {
         display: flex;
         background-color: rgb(118, 102, 102);
@@ -25,6 +56,7 @@ html {
     .pasteprivate_mobile-img {
         display: inline-block;
         padding-inline-start: 10px;
+        flex: 0.94;
     }
     .pasteprivate_mobile-logo {
         width: 170px;
@@ -111,7 +143,7 @@ html {
         right: 20px;
     }
     .pasteprivate-get-link {
-        background-color: rgb(50, 228, 50);
+        /* background-color: rgb(50, 228, 50); */
         padding: 30px;
         width: 90%;
         border-radius: 20px;
@@ -161,9 +193,9 @@ html {
     .remove_padding {
         padding: 0;
     }
-    .link_error {
+    /* .link_error {
         background-color: red;
-    }
+    } */
     .link_error:active {
         color: white;
         text-decoration: unset;
@@ -171,5 +203,28 @@ html {
     body>section>div.pasteprivate_mobile_success-content>div.pasteprivate_monbile-get_posted_link>div>span>a {
         color: white;
         text-decoration: none;
+    }
+    .Patseprivate_mobile-flex-paste_head {
+        display: flex;
+        padding: 20px;
+    }
+    .pasteprivate-mobile-title {
+        flex: 2;
+    }
+    .pasteprivate-mobile-paste-link-content {
+        padding: 20px;
+        margin: 20px;
+        border-left-style: dotted;
+    }
+    .paste_paste-new,
+    .pasteprivate_search_paste_bar_header {
+        display: none;
+    }
+    .pasteprivate_error_page {
+        background-image: url('/UserInterFace(UI)/assets/img/—Pngtree—error 404 page not found_5768129.png');
+        min-height: 114vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 120%;
     }
 }

@@ -1,0 +1,65 @@
+    /*
+
+Project Name: PastePrivate Project,
+Autho Namer: Ifeanyi Johnson Ibemesi,
+
+
+
+*/
+    
+    @media only screen and (max-width: 750px) {
+        .pasteprivate-mobile-nav {
+            line-height: 10px;
+            background-color: tan;
+            padding: 20px;
+            height: 763px;
+            width: 240px;
+        }
+        .pasteprivate-mobile-hamburger {
+            position: relative;
+        }
+        .pasteprivate-mobile_naviga {
+            position: fixed;
+            left: -1px;
+            top: -7px;
+            display: none;
+        }
+        /* @keyframes lefttoright {
+        0% {
+            transform: translate(0);
+            -webkit-transform: translate(0);
+            -moz-transform: translate(0);
+            -ms-transform: translate(0);
+            -o-transform: translate(0);
+        }
+        100% {
+            transform: translate(100);
+            -webkit-transform: translate(100);
+            -moz-transform: translate(100);
+            -ms-transform: translate(100);
+            -o-transform: translate(100);
+        } */
+        .pasteprivate_mobile-bar {
+            font-size: 35px;
+            color: white;
+            padding-top: 20px;
+        }
+        .pasteprivate-mobile_naviga.show {
+            display: block;
+            /* transition: width .35s;
+            -webkit-transition: width .35s;
+            -moz-transition: width .35s;
+            -ms-transition: width .35s;
+            -o-transition: width .35s; */
+            width: 240px;
+            transition-timing-function: linear;
+            transition-delay: .13s;
+            transition-property: width;
+            transition-duration: 2s;
+            z-index: 999;
+        }
+        .pasteprivate-mobile_naviga.show:focus {
+            width: 540px;
+        }
+    }
+    /* <i class="far fa-copy"></i> */
